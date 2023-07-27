@@ -16,7 +16,7 @@ def bfs(source, adj, v1):
             if not visited[nums]:
                 q.append(nums)
                 visited[nums] = True
-
+    return c
 v = int(input())
 adj = [[] for _ in range(v)]
 
@@ -33,6 +33,8 @@ for _ in range(n):
 #   print()
 
 c=bfs(0,adj,v)
+
+print()
 
 if c == v:
         print("True")
